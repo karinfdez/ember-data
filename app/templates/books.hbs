@@ -2,6 +2,10 @@
 {{outlet}}
 
 <br>
+	<h1>Books Details:</h1>
 	<b>Author: {{model.author}}</b><br>
 	<b>Year: {{model.year}}</b>
-<br>
+<br><br>
+
+	<h3>Please, modify the book and press save.</h3><br>
+{{book-component type=model create=(action "updateText") cancel=(action 'cancel')}}

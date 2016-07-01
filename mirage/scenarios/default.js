@@ -1,6 +1,6 @@
 export default function(server) {
 
-  server.createList('book',10);
+  server.createList('book',11);
 }
 
 
