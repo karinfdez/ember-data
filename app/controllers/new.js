@@ -20,6 +20,7 @@ export default Ember.Controller.extend({
 		// it return true so the controller is not handling this action.
 		//This action will be bubbled up to be handle by the new route
 		cancel(){
+			console.log("I'm on the new controller");
 			return true;
 		}
 	}

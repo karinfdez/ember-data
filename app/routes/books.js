@@ -5,8 +5,9 @@ export default Ember.Route.extend({
 		return this.store.findRecord('book',params.book_id);
 	},
 	// Now the action cancel bubbles up to the application route(came first from the controller)
-	actions{
+	actions: {
 		cancel(){
+			console.log("hello");
 			return true;
 		}
 	}

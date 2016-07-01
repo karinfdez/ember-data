@@ -6,7 +6,8 @@ export default Ember.Route.extend({
 	},
 	actions:{
 		cancel(){
-			this.transitionTo('application')
+			console.log("an finally on the application route");
+			this.transitionTo('application');
 		},
 		goToNew(){
 			this.transitionTo('new');

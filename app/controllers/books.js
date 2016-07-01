@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+	
 	actions:{
 		updateText(){
 			let book=this.get('model');
@@ -10,6 +11,7 @@ export default Ember.Controller.extend({
 		},
 		// bubbles up to the books route
 		cancel(){
+			console.log("I'm on the books controller");
 			return true;
 		}
 	}
